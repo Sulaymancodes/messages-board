@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="container">
+          <h1 class="title">Mini Messageboard</h1>
+          <p>Welcome to Mini Messageboard. Leave a Message😉</p>
+          <% messages.forEach((message) => { %>
+            <div class="message-container">
+                <div class="flex">
+                    <p class="name"><%= message.user %>:</p>
+                    <p><%= message.added %></p>
+                </div>
+                <p><%= message.text %></p>
+            </div>
+          <% }); %>
+          <li><a class="link-btn" href="/new">Add a new message</a></li>
+        </div>
+       
+    </body>
+</html>

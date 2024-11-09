@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <form method="post" action="/new">
+                <h1 class="title">Add a New Message</h1>
+                <label for="name">Name:</label><br><br>
+                <input type="text" name="name"><br><br>
+                <label for="name">Message:</label><br><br>
+                <input type="text" name="messageText"><br><br>
+                <input class="submit-btn" type="submit" value="Submit">
+                <li class="back-btn"><a class="back-btn-text" href="/">Back to messages</a></li>
+            </form>
+        </div>
+    </body>
+</html>
